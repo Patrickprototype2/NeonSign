@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap');
+
+*{
+    font-family: sans-serif;
+    overflow: visible;
+}
+
+#neonText{
+  position:absolute; top:15rem;  left:10px;
+  /* position: relative; */
+  width: 70%;
+  z-index: 2;
+  text-align: center;
+
+
+  font-family: 'Edu VIC WA NT Beginner', cursive;
+
+  font-size: 60pt;
+  color: white;
+  text-shadow: 0 0 0.05em #fff, 0 0 0.2em #fe05e1, 0 0 0.6em #fe05e1;
+
+
+
+  -webkit-user-select: none;
+ -moz-user-select: none;
+ -ms-user-select: none;
+ user-select: none;
+}
+
+#outerDiv{
+  /* display: inline-flex; */
+  caret-color: transparent;
+}
+
+#backgroundImg{
+  position:absolute; top:10px;  left:10px;
+  width: 70%;
+  padding-bottom: 5rem;
+}
+
+#interface{
+  margin-left: calc(70% + 2rem);
+  /* border: 1px red solid; */
+}
+
+#textOrLogo{
+  display: flex;
+  /* justify-content: center; */
+  width: 100%;
+  margin: 0;
+}
+
+#text{
+  padding:1rem 0rem;
+  margin: 0;
+  width: 50%;
+
+  border-right: 1px solid #6dbb5d;
+  background-color: #6dbb5d;
+  border-radius: 10px 0px 0px 10px;
+
+  font-family: sans-serif;
+  color: white;
+  text-align: center;
+}
+#logo{
+  padding:1rem 0rem;
+  margin: 0;
+  width: 50%;
+
+  background-color:#e4f2e1;
+  border-radius: 0px 10px 10px 0px;
+
+  font-family: sans-serif;
+  text-align: center;
+}
+
+textarea {
+  resize: none;
+  border: none;
+  caret-color: black;
+}
+
+#textBox{
+margin: 0;
+padding: 0;
+margin-top: 1rem;
+width: 100%;
+background-color: #e6e6e6;
+font-size: 16pt;
+
+
+border: none;
+overflow:hidden
+}
+
+#textBox:focus {
+  outline: none;
+}
+
+#fontFamilies{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+
+}
+
+.fontFamily{
+  width: calc(10rem);
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+
+  background-color: #d6d6d6;
+  border-radius: 5px;
+
+  cursor: pointer;
+  z-index: 100;
+}
