@@ -1,0 +1,36 @@
+
+/* outer container for sign demo */
+#container{
+position:absolute; top:10px;  left:10px;
+width: 60%;
+}
+
+#neonText{
+  /* sign position */
+  position:absolute; left: 50%;
+  transform: translate(-50%,0);
+
+  padding: 0;
+  z-index: 2;
+  text-align: left;
+  /* width: 100%; */
+
+  /* sign apearence */
+  font-size: 5vw;
+  color: white;
+  text-shadow: 0 0 0.05em #fff, 0 0 0.2em #fe05e1, 0 0 0.6em #fe05e1;
+
+  /* Stops user from selecting sign */
+  -webkit-user-select: none;
+ -moz-user-select: none;
+ -ms-user-select: none;
+ user-select: none;
+}
+
+/* background image for demo */
+#backgroundImg{
+  height: 100%;
+  width: 100%;
+  /* padding-bottom: 5rem; */
+  box-shadow: 0 0 1.05em #fff, 0 0 1.2em #fe05e1, 0 0 1.6em #fe05e1;
+}
