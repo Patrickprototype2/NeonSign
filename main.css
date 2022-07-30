@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap');
+
+
+
+*{
+    font-family: sans-serif;
+    overflow: visible;
+
+
+}
+body{
+      background-image: url("img/mainbg.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+
+h2 {
+  color: white;
+  font-family: 'Edu VIC WA NT Beginner', cursive;
+
+  text-align: center;
+  background-color: #212121;
+
+  padding: 0.5rem;
+  margin: 0;
+  margin-top: 1rem;
+}
+
+#outerDiv{
+  caret-color: transparent;
+  margin: 5rem;
+}
+
+#interface{
+  margin-left: calc(63% + 1rem);
+  background-color: rgba(231,231,231,.95);
+  padding: 1rem;
+  padding-top: 0;
+  margin-top: -4rem;
+}
+
+#interfaceTitle{
+  color: #fff;
+  font-size: 16pt;
+  /* font-weight: lighter; */
+  font-family: 'Edu VIC WA NT Beginner', cursive;
+  text-shadow: 0 0 0.05em #fff, 0 0 0.2em #fe05e1, 0 0 0.6em #fe05e1;
+}
+
+#textOrLogo{
+  display: flex;
+  /* justify-content: center; */
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  gap:1rem;
+}
+
+#textOrLogo p{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+
+  padding:0.5rem 0rem;
+  margin: 0;
+  /* width: 50%; */
+
+  background-color: rgba(0,0,0,.9);
+  /* box-shadow: 0 0 0.05em #fff, 0 0 0.2em #fe05e1, 0 0 0.6em #fe05e1; */
+  border-radius: 5px;
+  cursor: pointer;
+
+  font-family: 'Edu VIC WA NT Beginner', cursive;
+  color: white;
+  text-align: center;
+}
+
+
+textarea {
+  resize: none;
+  border: none;
+  caret-color: #6a6a6a;
+  text-align: center;
+  justify-content: center;
+  padding: 20px;
+
+
+
+  font-family: Calibri;
+  font-size: 12pt;
+  color: #000;
+}
+
+#textBox{
+margin: 0;
+padding: 0;
+margin-top: 1rem;
+width: 100%;
+background-color: #d0d0d0;
+border-radius: 5px;
+
+/* border: none; */
+border: 2px grey solid;
+overflow:hidden
+}
+
+#textBox:focus {
+  outline: none;
+}
+
+#fontFamilies{
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100% -2rem);
+  justify-content: space-between;
+  gap: 1rem;
+  background-color: #6c6c6c;
+  padding: 1rem 1rem;
+}
+
+.fontFamily{
+  width: calc(100%/3 - 2rem/3);
+
+  padding: 1rem 0rem;
+  text-align: center;
+  background-color: #ececec;
+  border-radius: 1px;
+
+  cursor: pointer;
+}
+
+/* COLORS */
+#neonColors {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100% -2rem);
+  justify-content: space-between;
+  gap: 1rem;
+  background-color: #6c6c6c;
+  padding: 1rem 1rem;
+}
+
+/* size of each color square */
+:root {--colorSize: 40px;}
+
+.neonColor {
+  width: var(--colorSize);
+  height: var(--colorSize);
+  padding: 0;
+  margin: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#white{background-color: white;}
+#red{background-color: #ff3838;}
+#orange{background-color: #ffd050;}
+#yellow{background-color: #fffc79;}
+#green{background-color: #62e276;}
+#blue{background-color: #00c9ff;}
+#purple{background-color: #fe05e1;}
