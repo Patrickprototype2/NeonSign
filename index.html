@@ -18,8 +18,14 @@
 <!-- Neon Sign demo -->
   <div id="container">
     <h1 id="neonText">Neon Text</h1>
-
-    <img id="backgroundImg" src="img/bg1.jpg" alt="Living Room">
+    <div id="bgContainer">
+      <img id="backgroundImg" src="img/bg1.jpg" alt="">
+    </div>
+    <div id="thumbnails">
+      <img class="thumbnail"src="img/bg1.jpg" alt="">
+      <img class="thumbnail"src="img/bg2.jpg" alt="">
+      <img class="thumbnail"src="img/bg3.jpg" alt="">
+    </div>
   </div>
 
 
@@ -34,7 +40,9 @@
       <p id="logo">upload logo or image</p>
     </div>
 
-    <textarea id="textBox" rows="6" name="text" placeholder="Enter your text here"></textarea>
+    <textarea id="textBox" rows="6" name="text" placeholder="
+
+    Enter your text here"></textarea>
     <!-- <input id="textBox" type="text" placeholder="     Type text here"> -->
 
     <h2>Font family</h2>
@@ -45,16 +53,54 @@
       <div class="fontFamily" style="font-family: 'Edu VIC WA NT Beginner', cursive;">example</div>
     </div>
 
-    <h2>Chose your color</h2>
+    <h2>Choose your colour</h2>
     <div id="neonColors">
-      <div id="white" class="neonColor"></div>
-      <div id="red" class="neonColor"></div>
+      <div id="white"  class="neonColor"></div>
+      <div id="red"    class="neonColor"></div>
       <div id="orange" class="neonColor"></div>
       <div id="yellow" class="neonColor"></div>
-      <div id="green" class="neonColor"></div>
-      <div id="blue" class="neonColor"></div>
+      <div id="green"  class="neonColor"></div>
+      <div id="blue"   class="neonColor"></div>
       <div id="purple" class="neonColor"></div>
     </div>
+
+    <h2>Choose size</h2>
+    <div id="sizesContainer">
+      <div id="sizes">
+        <div class="size">small £100 <br> width: 200cm <br> height: 100cm</div>
+        <div class="size">medium £200 <br> width: 200cm <br> height: 100cm</div>
+        <div class="size">large £300 <br> width: 200cm <br> height: 100cm</div>
+      </div>
+      <div id="customSize">
+        Chose custom size:
+        <input type="text" name="" value="" placeholder = "Width">
+         x
+        <input type="text" name="" value="" placeholder = "Height">
+      </div>
+    </div>
+
+
+    <h2>Choose your backing</h2>
+    <div id="backings">
+      <div class="backing">Cut to rectangle <br> FREE <br> <p class="backingDiscription"> Cuts acrylic to a rectangle around your design </p>
+      <span> <br> Example</span></div>
+
+      <div class="backing">Cut around text <br> FREE <br> <p class="backingDiscription"> Cuts acrylic smoothly around your design  </p>
+      <span> <br> Example</span></div>
+
+      <div class="backing">Cut to rectangle <br> +£30 <br> <p class="backingDiscription"> Cuts acrylic to a rectangle around your design </p>
+      <span> <br> Example</span></div>
+    </div>
+
+    <textarea id="notes" rows="6" name="text"
+    placeholder="
+
+     any notes to the maker?"></textarea>
+
+    <div id="buy">
+      Buy for £350
+    </div>
+
   </div>
   </div>
 
