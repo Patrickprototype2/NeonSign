@@ -1,8 +1,9 @@
 
 /* outer container for sign demo */
 #container{
-position:absolute; top:10px;  left:10px;
+position:absolute; top:6rem;  left:10px;
 width: 60%;
+
 }
 
 #neonText{
@@ -33,4 +34,18 @@ width: 60%;
   width: 100%;
   /* padding-bottom: 5rem; */
   box-shadow: 0 0 1.05em #fff, 0 0 1.2em #fe05e1, 0 0 1.6em #fe05e1;
+}
+
+#thumbnails {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  /* width: 100%; */
+
+}
+
+.thumbnail{
+  max-height: 10rem;
+  box-shadow: 0 0 1.05em #fff, 0 0 1.2em #fe05e1, 0 0 1.6em #fe05e1;
+  cursor: pointer;
 }
