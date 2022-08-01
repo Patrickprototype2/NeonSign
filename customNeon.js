@@ -21,9 +21,14 @@ fontType[3].style.boxShadow = "0 0 0.05em #fff, 0 0 0.2em #fe05e1, 0 0 0.6em #fe
 
 //colors
 let colorChoice = document.querySelectorAll('.neonColor');
-let colors = ["0 0 0.05em #fff, 0 0 0.2em #fff, 0 0 0.6em #fff", "0 0 0.05em red, 0 0 0.2em red, 0 0 0.6em red", "0 0 0.05em orange, 0 0 0.2em orange, 0 0 0.6em orange", "0 0 0.05em yellow, 0 0 0.2em yellow, 0 0 0.6em yellow", "0 0 0.05em #13e033, 0 0 0.2em #13e033, 0 0 0.6em #13e033", "0 0 0.05em #00c9ff, 0 0 0.2em #00c9ff, 0 0 0.6em #00c9ff", "0 0 0.05em #fff, 0 0 0.5em #fe05e1, 0 0 0.6em #fe05e1"];
-signDemo.style.textShadow = colors[6];
+let color = ["0 0 0.05em #fff, 0 0 0.2em #fff, 0 0 0.6em #fff", "0 0 0.05em red, 0 0 0.2em red, 0 0 0.6em red", "0 0 0.05em orange, 0 0 0.2em orange, 0 0 0.6em orange", "0 0 0.05em yellow, 0 0 0.2em yellow, 0 0 0.6em yellow", "0 0 0.05em #13e033, 0 0 0.2em #13e033, 0 0 0.6em #13e033", "0 0 0.05em #00c9ff, 0 0 0.2em #00c9ff, 0 0 0.6em #00c9ff", "0 0 0.05em #fff, 0 0 0.5em #fe05e1, 0 0 0.6em #fe05e1"];
+signDemo.style.textShadow = color[6];
+colorChoice[6].style.boxShadow = color[6];
 
+// background options
+let bgChoice = document.querySelectorAll('.thumbnail');
+// let bgImage = document.getElementById('#backgroundImg');
+// console.log(bgImage);
 
 
 //updates neon sign to whats in the text box.
@@ -93,13 +98,20 @@ for (let i = 0; i < fontType.length; i++) {
 for (let i = 0; i < colorChoice.length; i++) {
   colorChoice[i].addEventListener("click", function () {
     //...adds chosen font to neon sign demo
-    signDemo.style.textShadow = colors[i];
+    signDemo.style.textShadow = color[i];
 
     // turn every option to appear deselected
     for (let i = 0; i < colorChoice.length; i++) {
       colorChoice[i].style.boxShadow = "none";
     }
     // add selected apearence to the option selected.
-    colorChoice[i].style.boxShadow = colors[i];
+    colorChoice[i].style.boxShadow = color[i];
   });
+}
+
+for (let i = 0; i < bgChoice.length; i++) {
+
+  bgChoice[i].addEventListener("click", function() {
+    document.querySelector('#bgContainer').innerHTML = `<img id="backgroundImg" src="img/bg${i + 1}.jpg" alt="Living Room">`;
+  })
 }
